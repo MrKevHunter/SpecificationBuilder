@@ -40,8 +40,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Address.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Contact.cs" />
+    <Compile Include="SpecificationAggregate.cs" />
+    <Compile Include="Specifications\ISpecification.cs" />
+    <Compile Include="Specifications\LastNameEqualsSpecification.cs" />
+    <Compile Include="Specifications\PostCodeEndsWithSpecification.cs" />
+    <Compile Include="Specifications\PostCodeStartsWithSpecification.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
